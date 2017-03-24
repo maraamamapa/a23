@@ -32,7 +32,7 @@
           </tr>
 
           <?php
-          while ($fila=$resultado->fetch_assoc()) {
+          foreach ($resultado as $fila) {
             echo "<tr>";
               echo"<td>".$fila['Nombre']."</td>";
               echo"<td>".$fila['Ciudad']."</td>";
